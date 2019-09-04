@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类选择器2</title>
+    <style>
+        /*li:nth-child(odd) {  !* 可以选择所有奇数 *!*/
+        /*    color: pink;*/
+        /*}*/
+        /*li:nth-child(even) {  !* 可以选择所有偶数 *!*/
+        /*    color: deeppink;*/
+        /*}*/
+        li:nth-child(3n) {  /* n是所有 2n 3n 2n +- 1 */
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+<ui>
+    <li>第一个孩子</li>
+    <li>第二个孩子</li>
+    <li>第三个孩子</li>
+    <li>第四个孩子</li>
+    <li>第五个孩子</li>
+    <li>第六个孩子</li>
+    <li>第七个孩子</li>
+</ui>
+</body>
+</html>
